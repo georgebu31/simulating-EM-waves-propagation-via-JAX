@@ -1,7 +1,12 @@
 """jaxoptics — JAX-based angular spectrum method library for EM wave propagation."""
 
 from .beams import gauss_profile
-from .propagation import make_transfer_func, propagate_asm
+from .propagation import (
+    make_transfer_func,
+    propagate_asm,
+    propagate_asm_padded,
+    nyquist_check,
+)
 from .phase import phaseshiftt, phaseshift, wrap_to_pi
 from .intensity import intensity
 from .ports import (
@@ -18,6 +23,8 @@ __all__ = [
     "gauss_profile",
     "make_transfer_func",
     "propagate_asm",
+    "propagate_asm_padded",
+    "nyquist_check",
     "phaseshiftt",
     "phaseshift",
     "wrap_to_pi",
