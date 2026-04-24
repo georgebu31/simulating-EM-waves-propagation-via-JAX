@@ -6,7 +6,8 @@ A lightweight JAX library for simulating free-space electromagnetic wave propaga
 
 This project is an attempt to reproduce and extend the results from:
 
-> **Tian et al. (2023)** — *"Phase-only wavefront shaping for free-space optical beam splitting"* (or equivalent title).
+> **Tian, et al.
+"Metasurface‐based free‐space multi‐port beam splitter with arbitrary power ratio." Advanced Optical Materials 11.20, 2300664 (2023).
 
 The key idea from the paper is to optimise a phase-only mask (e.g. on an SLM) such that a single input Gaussian beam is split into multiple output ports with target power ratios. The phase initialisation heuristic (`phi_init_paper`) directly follows the superposition-of-blazed-gratings approach described therein. All simulation and optimisation code in this repo is written from scratch in JAX to achieve similar results with full GPU acceleration and automatic differentiation.
 
